@@ -3,7 +3,7 @@ const btn = document.querySelector("button");
 const info = document.querySelector("#info");
 
 function getShortedLink(id) {
-  return document.location.href + "short/" + id;
+  return document.location.href + id;
 }
 
 function displayLink(link) {

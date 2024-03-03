@@ -57,7 +57,7 @@ app.get("/add/:url", function (req, res) {
   });
 });
 
-app.get("/short/:id", function (req, res) {
+app.get("/:id", function (req, res) {
   const id = req.params.id;
   db.get<Line>("SELECT * FROM links WHERE id = ?", [id], (err, row) => {
     if (err) {
